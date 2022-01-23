@@ -8,16 +8,18 @@
 # If they run out of turns, provide feedback to the player. 
 # Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 
+#importing the values
 from replit import clear
 import random
 from art import logo
 
 
-
+#function for getting the random number
 def getting_value():
   score = random.randint(1,100)
   return score
 
+#function for comparing the values
 def compare(user_value,initial_value):
   difference = user_value - initial_value
   if difference == 0:
@@ -31,7 +33,7 @@ def compare(user_value,initial_value):
   elif difference > -10:
     return "You are getting close"
 
-
+#function for playing game
 def play_game():
   print(logo)
   attempts = 0
