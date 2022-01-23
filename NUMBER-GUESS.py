@@ -50,7 +50,7 @@ def play_game():
     attempts = 5
     print("You have 5 attempts remaining.")
    
-  print(computer_guess)
+  
   while continue_play:
     user_guess = int(input("Enter a number you want to guess: "))
     output = compare(user_guess,computer_guess)
